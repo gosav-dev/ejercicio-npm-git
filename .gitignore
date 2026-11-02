@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+#              |
+#              |
+#Este de aquí  v
+
+dist
+#              |
+#              |
+#Y este otro   v
+dist-ssr
+#Las razones por la que se añaden estas dos carpetas :
+#1.- Evitar archivos innecesarios
+#2.- Evitar conflictos
+#3.- Reducir el tamaño del repositorio
+#4.- Por seguridad
+
+*.local
+
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
