@@ -3,6 +3,7 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import confetti from 'canvas-confetti'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,19 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+        <button
+          type="button"
+          className="counter"
+          onClick={() =>
+            confetti({
+              particleCount: 150,
+              spread: 80,
+              origin: { y: 0.6 },
+            })
+          }
+        >
+        ¡Haz clic!
+        </button>
         <button
           type="button"
           className="counter"
